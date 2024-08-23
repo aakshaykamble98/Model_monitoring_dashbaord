@@ -194,7 +194,7 @@ def app():
     base_dir = os.path.dirname(__file__)
     
     # Read the Excel file
-    df = pd.read_excel(os.path.join(base_dir, 'Datasets', 'support_2.xlsx', header = None))  # Ensure the file is in the 'Datasets' directory
+    df = pd.read_excel(os.path.join(base_dir, 'Datasets', 'Support_2.xlsx', header = None))  # Ensure the file is in the 'Datasets' directory
     
     # Replace None values with empty strings for better display
     df = df.fillna("")
