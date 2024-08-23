@@ -546,7 +546,7 @@ def app():
     base_dir = os.path.dirname(__file__)
     
     # Read the Excel file
-    df = pd.read_excel(os.path.join(base_dir, 'Datasets', 'summary_table.xlsx'))
+    df = pd.read_excel(os.path.join(base_dir, 'Datasets', 'Summary_table.xlsx'))
 
     # Apply styling to the DataFrame
     styled_df = df.style.applymap(lambda x: highlight_gini(x, thresholds_gini), subset=['Dev Gini'])
